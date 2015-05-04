@@ -1,0 +1,28 @@
+# Lists all features from the model with manual (first digit) and automatic (second digit) selection
+# 0 = deselected, 1 = selected, 2 = undefined
+21Chat
+21UI
+12GUI
+22GUI-Elemente
+22Schriftfarbe
+22Smilies
+22Schriftart
+22Schtiftgröße
+22sonstiges
+22Kursiv
+22Fett
+22Unterstrichen
+20Konsole
+11Basis
+22Login
+22Passwort
+22Nickname
+22Verschlüsselung
+22History
+22Spamfilter
+22Tonausgabe
+22Status
+22Sprachnachrichten
+22Räume
+22Admin
+22PM
