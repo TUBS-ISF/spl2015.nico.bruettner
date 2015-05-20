@@ -1,0 +1,17 @@
+Server: Der Server kann mit den Parametern: "-pm", "-u" und "-p <passwort>" gestartet werden und wartet auf neue Verbindungen auf Port 12345
+-u : Clients müssen beim login einen Benutzernamen angeben.
+-pm: Clienten können private Nachrichten senden. Befehl: /pm <Empfänger> <Nachricht>. <Empfänger> ist entweder der Benutzername, falls Server mit "-u" gestartet wurde, oder von der Form "clientX", wobei X vom Server bei jeder neuen Verbindung um eins erhöht wird. (X beginnt bei 0)
+-p : Cleints müssen beim login das angegebene Passwort angeben.
+Die Parameter "-e" und "-h" zum Verschlüsseln bzw. Schreiben der History sind noch fehlerhaft.
+
+
+Client: Der Client kann folgendermaßen gestartet werden: java Client <host> <port> (-u <username>) (-p <password>)
+-u und -p sind dabei von der Wahl der Parameter des Servers anhängig.
+
+
+getestete Kombinationen:
+1)	java Server
+	java Client localhost 12345
+
+2)	java Server -pm -u -p pass
+	java Client localhost 12345 -u nico -p pass
