@@ -14,22 +14,22 @@
 							<description>
 								Das Aussehen der gesendeten Nachrichten kann geändert werden
 							</description>
-							<feature mandatory="true" name="Schriftfarbe">
+							<feature abstract="true" mandatory="true" name="Schriftfarbe">
 								<description>
 									Die Schriftfarbe der gesendeten Nachrichten kann verändert werden
 								</description>
 							</feature>
-							<feature mandatory="true" name="Smilies">
+							<feature abstract="true" mandatory="true" name="Smilies">
 								<description>
 									Smilies werden automatisch durch Icons ersetzt
 								</description>
 							</feature>
-							<feature mandatory="true" name="Schriftart">
+							<feature abstract="true" mandatory="true" name="Schriftart">
 								<description>
 									Die Schriftart der gesendeten Nachrichten kann verändert werden
 								</description>
 							</feature>
-							<feature mandatory="true" name="Schtiftgroesse">
+							<feature abstract="true" mandatory="true" name="Schtiftgroesse">
 								<description>
 									Die Schriftgröße der gesendeten Nachrichten kann verändert werden
 								</description>
@@ -38,17 +38,17 @@
 								<description>
 									Nachrichten können kursiv,fett und unterstrichen sein
 								</description>
-								<feature mandatory="true" name="Kursiv">
+								<feature abstract="true" mandatory="true" name="Kursiv">
 									<description>
 										Nachrichten können kursiv geschrieben werden
 									</description>
 								</feature>
-								<feature mandatory="true" name="Fett">
+								<feature abstract="true" mandatory="true" name="Fett">
 									<description>
 										Nachrichten können fett geschrieben werden
 									</description>
 								</feature>
-								<feature mandatory="true" name="Unterstrichen">
+								<feature abstract="true" mandatory="true" name="Unterstrichen">
 									<description>
 										Nachrichten können unterstrichen werden
 									</description>
@@ -62,7 +62,7 @@
 						</description>
 					</feature>
 				</alt>
-				<feature mandatory="true" name="Basis">
+				<feature abstract="true" mandatory="true" name="Basis">
 					<description>
 						Basis Funktionalität
 						Clients verbinden sich mit einem Server und können Nachrichten austauschen
@@ -98,27 +98,27 @@
 						Nachrichten, die Wörter einer (vohher festgelegten) Liste enthalten, werden gelöscht bzw. nicht zugestellt
 					</description>
 				</feature>
-				<feature name="Tonausgabe">
+				<feature abstract="true" name="Tonausgabe">
 					<description>
 						Beim Erhalt einer Nachricht ertönt ein Ton
 					</description>
 				</feature>
-				<feature name="Status">
+				<feature abstract="true" name="Status">
 					<description>
 						Clients können einen Statustext festlegen
 					</description>
 				</feature>
-				<feature name="Sprachnachrichten">
+				<feature abstract="true" name="Sprachnachrichten">
 					<description>
 						Clients können Sprachnachrichten verschicken
 					</description>
 				</feature>
-				<feature name="Raeume">
+				<feature abstract="true" name="Raeume">
 					<description>
 						Clients können Räume erstellen, um Nachrichten nur an einen kleineren Personenkreis zu schicken
 					</description>
 				</feature>
-				<feature name="Admin">
+				<feature abstract="true" name="Admin">
 					<description>
 						Clients mit besonderen Rechten können andere Clients vom Server schmeißen
 					</description>
