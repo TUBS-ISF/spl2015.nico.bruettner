@@ -1,0 +1,7 @@
+Benötigte Parameter:
+	Feature:
+		Passwort:
+			Server -p <passwort>
+			Client -p <passwort>
+		Nickname:
+			Client -u <nickname>
