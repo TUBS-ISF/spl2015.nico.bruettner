@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="Chat">
+				<feature mandatory="true" name="Basis">
+					<description>
+						Basis Funktionalität
+						Clients verbinden sich mit einem Server und können Nachrichten austauschen
+					</description>
+				</feature>
+				<alt abstract="true" mandatory="true" name="UI">
+					<description>
+						grafisch oder textuell
+					</description>
+					<and mandatory="true" name="GUI">
+						<description>
+							Der Client enthält eine GUI
+						</description>
+						<or abstract="true" name="GUIElemente">
+							<description>
+								Das Aussehen der gesendeten Nachrichten kann geändert werden
+							</description>
+							<feature abstract="true" mandatory="true" name="Schriftfarbe">
+								<description>
+									Die Schriftfarbe der gesendeten Nachrichten kann verändert werden
+								</description>
+							</feature>
+							<feature abstract="true" mandatory="true" name="Smilies">
+								<description>
+									Smilies werden automatisch durch Icons ersetzt
+								</description>
+							</feature>
+							<feature abstract="true" mandatory="true" name="Schriftart">
+								<description>
+									Die Schriftart der gesendeten Nachrichten kann verändert werden
+								</description>
+							</feature>
+							<feature abstract="true" mandatory="true" name="Schtiftgroesse">
+								<description>
+									Die Schriftgröße der gesendeten Nachrichten kann verändert werden
+								</description>
+							</feature>
+							<and abstract="true" mandatory="true" name="sonstiges">
+								<description>
+									Nachrichten können kursiv,fett und unterstrichen sein
+								</description>
+								<feature abstract="true" mandatory="true" name="Kursiv">
+									<description>
+										Nachrichten können kursiv geschrieben werden
+									</description>
+								</feature>
+								<feature abstract="true" mandatory="true" name="Fett">
+									<description>
+										Nachrichten können fett geschrieben werden
+									</description>
+								</feature>
+								<feature abstract="true" mandatory="true" name="Unterstrichen">
+									<description>
+										Nachrichten können unterstrichen werden
+									</description>
+								</feature>
+							</and>
+						</or>
+					</and>
+					<feature mandatory="true" name="Konsole">
+						<description>
+							Der Client ist eine reine Konsolenanwendung
+						</description>
+					</feature>
+				</alt>
+				<or abstract="true" name="Login">
+					<description>
+						Für Login benötigte Angaben
+					</description>
+					<feature mandatory="true" name="Passwort">
+						<description>
+							Server ist durch ein Passwort geschützt
+						</description>
+					</feature>
+					<feature mandatory="true" name="Nickname">
+						<description>
+							Clients müssen einen eindeutigen Benutzernamen beim Login angeben
+						</description>
+					</feature>
+				</or>
+				<feature name="Verschluesselung">
+					<description>
+						Nachrichten werden verschlüsselt übertragen
+					</description>
+				</feature>
+				<feature name="History">
+					<description>
+						Clients speichern alle empfangenen Nachrichten, um sie später nochmal anschauen zu können
+					</description>
+				</feature>
+				<feature name="Spamfilter">
+					<description>
+						Nachrichten, die Wörter einer (vohher festgelegten) Liste enthalten, werden gelöscht bzw. nicht zugestellt
+					</description>
+				</feature>
+				<feature name="Tonausgabe">
+					<description>
+						Beim Erhalt einer Nachricht ertönt ein Ton
+					</description>
+				</feature>
+				<feature abstract="true" name="Status">
+					<description>
+						Clients können einen Statustext festlegen
+					</description>
+				</feature>
+				<feature abstract="true" name="Sprachnachrichten">
+					<description>
+						Clients können Sprachnachrichten verschicken
+					</description>
+				</feature>
+				<feature abstract="true" name="Raeume">
+					<description>
+						Clients können Räume erstellen, um Nachrichten nur an einen kleineren Personenkreis zu schicken
+					</description>
+				</feature>
+				<feature name="Admin">
+					<description>
+						Clients mit besonderen Rechten können andere Clients vom Server schmeißen
+					</description>
+				</feature>
+				<feature name="PM">
+					<description>
+						Private Nachrichten können verschickt werden
+					</description>
+				</feature>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="true">
+			<feature name="Basis"/>
+			<feature name="GUI"/>
+			<feature name="Konsole"/>
+			<feature name="Verschluesselung"/>
+			<feature name="Passwort"/>
+			<feature name="Nickname"/>
+			<feature name="History"/>
+			<feature name="Spamfilter"/>
+			<feature name="PM"/>
+		</featureOrder>
+	</featureModel>

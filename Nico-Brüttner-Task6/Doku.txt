@@ -1,0 +1,14 @@
+Benötigte Parameter:
+	Feature:
+		Passwort:
+			Server -p <passwort>
+			Client -p <passwort>
+		Nickname:
+			Client -u <nickname>
+
+Befehle für Clients:
+	Feature:
+		"PM": /pm <nickname> <Nachricht>
+		(sendet private Nachricht)
+		"Admin": /kick <nickname>
+		(Client mit Nicknamen "admin" kann andere Clients hinauswerfen)
